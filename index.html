@@ -1,12 +1,584 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PONCE CUPS </title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ponce Cups | Regalos personalizados</title>
+
+  <meta
+    name="description"
+    content="Tazas y regalos personalizados en Ponce Cups. Compra por unidad, por cantidad o en combos. Pedidos por WhatsApp y envíos a Lima y provincias."
+  >
+  <meta name="theme-color" content="#b71935">
+
+  <!-- El navegador utiliza el CSS compilado -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <H1>PONCE CUPS</H1>
+  <a class="saltar" href="#contenido">Ir al contenido</a>
+
+  <!-- Control del fondo: funciona sin JavaScript -->
+  <input class="pausa" type="checkbox" id="pausar-fondo">
+  <label class="control-fondo" for="pausar-fondo">
+    Pausar fondo animado
+  </label>
+
+  <div class="fondo-animado" aria-hidden="true"></div>
+
+  <div class="barra-superior">
+    Personalización incluida
+    <span aria-hidden="true">✦</span>
+    Envíos a Lima y provincias
+  </div>
+
+  <header class="encabezado">
+    <div class="contenedor cabecera">
+      <!-- Puedes sustituir este nombre por tu logo más adelante -->
+      <a class="marca" href="#inicio" aria-label="Ponce Cups, inicio">
+        Ponce <span>Cups</span><i aria-hidden="true">✦</i>
+      </a>
+
+      <p class="eslogan">Pequeños detalles. Grandes recuerdos.</p>
+
+      <nav class="navegacion" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#como-comprar">Cómo comprar</a>
+        <a href="#entregas">Entregas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- PRESENTACIÓN -->
+    <section id="inicio" class="hero seccion">
+      <div class="contenedor hero-panel">
+        <div class="hero-texto">
+          <span class="etiqueta">Hecho con tu toque personal</span>
+
+          <h1>Detalles personalizados para <span>momentos especiales.</span></h1>
+
+          <p>
+            Tu foto favorita, una frase especial o ese nombre que lo
+            cambia todo. Somos un emprendimiento familiar que convierte
+            tus ideas en tazas y regalos para compartir.
+          </p>
+
+          <div class="acciones">
+            <a class="boton boton-rojo" href="#productos">
+              Ver productos <span aria-hidden="true">↗</span>
+            </a>
+            <a class="boton boton-borde" href="#contacto">
+              Consultar por WhatsApp
+            </a>
+          </div>
+
+          <ul class="beneficios">
+            <li>Personalización incluida</li>
+            <li>Por unidad y al por mayor</li>
+            <li>Para regalar y compartir</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-foto">
+            <img
+              src="imagenes/tazas.jpeg"
+              alt="Tazas personalizadas de Ponce Cups"
+              fetchpriority="high"
+            >
+          </div>
+          <div class="nota-visual">
+            <span aria-hidden="true">♡</span>
+            <p>
+              <strong>Un detalle que se vuelve recuerdo</strong>
+              <span>Tu idea, nuestra dedicación.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <div class="contenedor">
+      <ul class="ventajas">
+        <li>
+          <span aria-hidden="true">01</span>
+          <div><strong>Elige tu favorito</strong><p>Opciones para cada ocasión</p></div>
+        </li>
+        <li>
+          <span aria-hidden="true">02</span>
+          <div><strong>Personalízalo</strong><p>Fotos, nombres y frases</p></div>
+        </li>
+        <li>
+          <span aria-hidden="true">03</span>
+          <div><strong>Coordina por WhatsApp</strong><p>Dos contactos para atenderte</p></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- CATÁLOGO -->
+    <section id="productos" class="seccion">
+      <div class="contenedor">
+        <div class="titulo-seccion">
+          <span class="sobre-titulo">Nuestro catálogo</span>
+          <h2>Un regalo con mucho de ti.</h2>
+          <p>
+            Todos los precios incluyen la personalización.
+            Elige por unidad, por cantidad o en combo.
+          </p>
+        </div>
+
+        <div class="catalogo">
+
+          <!-- PRODUCTO 1 -->
+          <article class="producto">
+            <div class="producto-foto">
+              <span class="distintivo">Tu diseño favorito</span>
+              <img
+                src="imagenes/tazas.jpeg"
+                alt="Tazas personalizadas de 11 onzas AAA+"
+                loading="lazy"
+              >
+            </div>
+            <div class="producto-contenido">
+              <span class="categoria">Para cada ocasión</span>
+              <h3>Taza de 11 oz AAA+</h3>
+              <p class="descripcion">
+                Dale un significado especial con una fotografía,
+                un nombre o una frase.
+              </p>
+              <p class="precio">S/ 10.00 <span>por unidad</span></p>
+              <div class="precio-especial">
+                <strong>S/ 7.50 cada una</strong>
+                <span>En pedidos de 17 unidades</span>
+              </div>
+              <details class="pedido">
+                <summary>Pedir por WhatsApp <span aria-hidden="true">↗</span></summary>
+                <div class="opciones">
+                  <p>Ambos contactos pueden atenderte:</p>
+                  <a
+                    href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20de%2011%20oz%20AAA%2B.%20Quiero%20consultar%20cantidad%2C%20personalizacion%20y%20entrega."
+                    target="_blank" rel="noopener noreferrer"
+                  >WhatsApp 1 · 941 686 589</a>
+                  <a
+                    href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20de%2011%20oz%20AAA%2B.%20Quiero%20consultar%20cantidad%2C%20personalizacion%20y%20entrega."
+                    target="_blank" rel="noopener noreferrer"
+                  >WhatsApp 2 · 984 345 276</a>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 2 -->
+          <article class="producto">
+            <div class="producto-foto">
+              <span class="distintivo distintivo-dorado">Un detalle diferente</span>
+              <img
+                src="imagenes/tazas1.jpeg"
+                alt="Taza mágica negra de 11 onzas"
+                loading="lazy"
+              >
+            </div>
+            <div class="producto-contenido">
+              <span class="categoria">Para sorprender</span>
+              <h3>Taza mágica de 11 oz</h3>
+              <p class="descripcion">
+                Convierte tu idea en una taza personalizada
+                para esa persona especial.
+              </p>
+              <p class="precio">S/ 15.00 <span>por unidad</span></p>
+              <div class="precio-especial">
+                <strong>S/ 9.90 cada una</strong>
+                <span>En pedidos de 10 unidades</span>
+              </div>
+              <details class="pedido">
+                <summary>Pedir por WhatsApp <span aria-hidden="true">↗</span></summary>
+                <div class="opciones">
+                  <p>Ambos contactos pueden atenderte:</p>
+                  <a
+                    href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20magica%20de%2011%20oz.%20Quiero%20consultar%20cantidad%2C%20personalizacion%20y%20entrega."
+                    target="_blank" rel="noopener noreferrer"
+                  >WhatsApp 1 · 941 686 589</a>
+                  <a
+                    href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20magica%20de%2011%20oz.%20Quiero%20consultar%20cantidad%2C%20personalizacion%20y%20entrega."
+                    target="_blank" rel="noopener noreferrer"
+                  >WhatsApp 2 · 984 345 276</a>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 3 -->
+          <article class="producto">
+            <div class="producto-foto">
+              <span class="distintivo">Un toque de color</span>
+              <img
+                src="imagenes/tazas2.jpeg"
+                alt="Tazas con interior y asa de color"
+                loading="lazy"
+              >
+            </div>
+            <div class="producto-contenido">
+              <span class="categoria">Color y personalidad</span>
+              <h3>Taza con interior y asa de color</h3>
+              <p class="descripcion">
+                Combina tu diseño con un toque de color.
+                Consulta las opciones disponibles.
+              </p>
+              <p class="precio">S/ 13.00 <span>por unidad</span></p>
+              <div class="precio-especial">
+                <strong>S/ 8.90 cada una</strong>
+                <span>En pedidos de 10 unidades</span>
+              </div>
+              <details class="pedido">
+                <summary>Pedir por WhatsApp <span aria-hidden="true">↗</span></summary>
+                <div class="opciones">
+                  <p>Ambos contactos pueden atenderte:</p>
+                  <a
+                    href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20con%20interior%20y%20asa%20de%20color.%20Quiero%20consultar%20colores%2C%20cantidad%2C%20personalizacion%20y%20entrega."
+                    target="_blank" rel="noopener noreferrer"
+                  >WhatsApp 1 · 941 686 589</a>
+                  <a
+                    href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20con%20interior%20y%20asa%20de%20color.%20Quiero%20consultar%20colores%2C%20cantidad%2C%20personalizacion%20y%20entrega."
+                    target="_blank" rel="noopener noreferrer"
+                  >WhatsApp 2 · 984 345 276</a>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 4 -->
+          <article class="producto">
+            <div class="producto-foto">
+              <span class="distintivo distintivo-dorado">Un acabado especial</span>
+              <img
+                src="imagenes/tazas3.jpeg"
+                alt="Tazas espejo con diferentes acabados"
+                loading="lazy"
+              >
+            </div>
+            <div class="producto-contenido">
+              <span class="categoria">Para regalar con estilo</span>
+              <h3>Taza espejo</h3>
+              <p class="descripcion">
+                Un acabado que destaca y una personalización
+                que hace el detalle tuyo.
+              </p>
+              <p class="precio">S/ 15.00 <span>por unidad</span></p>
+              <div class="precio-especial">
+                <strong>S/ 10.90 cada una</strong>
+                <span>En pedidos de 10 unidades</span>
+              </div>
+              <details class="pedido">
+                <summary>Pedir por WhatsApp <span aria-hidden="true">↗</span></summary>
+                <div class="opciones">
+                  <p>Ambos contactos pueden atenderte:</p>
+                  <a
+                    href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20espejo.%20Quiero%20consultar%20colores%2C%20cantidad%2C%20personalizacion%20y%20entrega."
+                    target="_blank" rel="noopener noreferrer"
+                  >WhatsApp 1 · 941 686 589</a>
+                  <a
+                    href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20espejo.%20Quiero%20consultar%20colores%2C%20cantidad%2C%20personalizacion%20y%20entrega."
+                    target="_blank" rel="noopener noreferrer"
+                  >WhatsApp 2 · 984 345 276</a>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 5 -->
+          <article class="producto">
+            <div class="producto-foto">
+              <span class="distintivo">Para compartir ♡</span>
+              <img
+                src="imagenes/tazas4.jpeg"
+                alt="Combo de dos tazas para pareja"
+                loading="lazy"
+              >
+            </div>
+            <div class="producto-contenido">
+              <span class="categoria">Un recuerdo para dos</span>
+              <h3>Combo pareja personalizado</h3>
+              <p class="descripcion">
+                Dos tazas personalizadas con la foto de la pareja,
+                para compartir un recuerdo juntos.
+              </p>
+              <p class="precio">S/ 23.60 <span>por el combo completo</span></p>
+              <div class="precio-especial">
+                <strong>Incluye dos tazas</strong>
+                <span>Personalizadas con foto de la pareja</span>
+              </div>
+              <details class="pedido">
+                <summary>Pedir por WhatsApp <span aria-hidden="true">↗</span></summary>
+                <div class="opciones">
+                  <p>Ambos contactos pueden atenderte:</p>
+                  <a
+                    href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Me%20interesa%20el%20combo%20pareja%20de%20dos%20tazas%20por%20S%2F%2023.60.%20Quiero%20coordinar%20la%20personalizacion%20y%20entrega."
+                    target="_blank" rel="noopener noreferrer"
+                  >WhatsApp 1 · 941 686 589</a>
+                  <a
+                    href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Me%20interesa%20el%20combo%20pareja%20de%20dos%20tazas%20por%20S%2F%2023.60.%20Quiero%20coordinar%20la%20personalizacion%20y%20entrega."
+                    target="_blank" rel="noopener noreferrer"
+                  >WhatsApp 2 · 984 345 276</a>
+                </div>
+              </details>
+            </div>
+          </article>
+
+          <!-- PRODUCTO 6 -->
+          <article class="producto">
+            <div class="producto-foto">
+              <span class="distintivo distintivo-dorado">También en combo</span>
+              <img
+                src="imagenes/tazas5.jpeg"
+                alt="Choperos transparentes de 16 onzas"
+                loading="lazy"
+              >
+            </div>
+            <div class="producto-contenido">
+              <span class="categoria">Para brindar y recordar</span>
+              <h3>Chopero de 16 oz</h3>
+              <p class="descripcion">
+                Personalízalo a tu gusto. Disponible por unidad,
+                por cantidad o en combo para dos.
+              </p>
+              <p class="precio">S/ 15.90 <span>por unidad</span></p>
+              <div class="precio-especial">
+                <strong>S/ 12.00 cada uno</strong>
+                <span>Desde 10 unidades</span>
+              </div>
+              <p class="combo">
+                <strong>Combo pareja: S/ 29.00</strong>
+                <span>Incluye dos choperos</span>
+              </p>
+              <details class="pedido">
+                <summary>Pedir por WhatsApp <span aria-hidden="true">↗</span></summary>
+                <div class="opciones">
+                  <p>Ambos contactos pueden atenderte:</p>
+                  <a
+                    href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Me%20interesa%20el%20chopero%20de%2016%20oz.%20Quiero%20consultar%20cantidad%2C%20combo%20pareja%2C%20personalizacion%20y%20entrega."
+                    target="_blank" rel="noopener noreferrer"
+                  >WhatsApp 1 · 941 686 589</a>
+                  <a
+                    href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Me%20interesa%20el%20chopero%20de%2016%20oz.%20Quiero%20consultar%20cantidad%2C%20combo%20pareja%2C%20personalizacion%20y%20entrega."
+                    target="_blank" rel="noopener noreferrer"
+                  >WhatsApp 2 · 984 345 276</a>
+                </div>
+              </details>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="nota-catalogo">
+          ¿Tienes otra idea o necesitas otra cantidad?
+          <a href="#contacto">Cuéntanos por WhatsApp.</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- CÓMO COMPRAR -->
+    <section id="como-comprar" class="seccion">
+      <div class="contenedor bloque-blanco">
+        <div class="titulo-seccion">
+          <span class="sobre-titulo">Así de sencillo</span>
+          <h2>Tu idea se convierte en regalo.</h2>
+          <p>Coordinamos contigo cada detalle por WhatsApp.</p>
+        </div>
+
+        <ol class="pasos">
+          <li>
+            <span class="numero" aria-hidden="true">1</span>
+            <h3>Elige</h3>
+            <p>Selecciona tu producto y la cantidad que necesitas.</p>
+          </li>
+          <li>
+            <span class="numero" aria-hidden="true">2</span>
+            <h3>Escríbenos</h3>
+            <p>Cualquiera de nuestros dos contactos puede atenderte.</p>
+          </li>
+          <li>
+            <span class="numero" aria-hidden="true">3</span>
+            <h3>Personaliza</h3>
+            <p>Envía tus fotos, nombres o frases y coordinamos el diseño.</p>
+          </li>
+          <li>
+            <span class="numero" aria-hidden="true">4</span>
+            <h3>Confirma</h3>
+            <p>Aprueba el diseño y realiza el adelanto para comenzar.</p>
+          </li>
+        </ol>
+
+        <div class="adelanto">
+          <strong class="porcentaje">30<span>%</span></strong>
+          <div>
+            <h3>El primer paso para hacerlo realidad</h3>
+            <p>
+              Para comenzar la elaboración de tu pedido personalizado,
+              solicitamos un <strong>adelanto del 30 % del total</strong>.
+              El pago del 70 % restante se coordina con la persona que te atiende.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENTREGAS Y CONDICIONES -->
+    <section id="entregas" class="seccion">
+      <div class="contenedor">
+        <div class="titulo-seccion">
+          <span class="sobre-titulo">Antes de pedir</span>
+          <h2>Todo claro, de principio a fin.</h2>
+        </div>
+
+        <div class="informacion">
+          <article class="tarjeta-info">
+            <span class="icono" aria-hidden="true">↗</span>
+            <h3>Entregas y envíos</h3>
+            <ul>
+              <li>Entregas coordinadas en cualquier estación del tren.</li>
+              <li>Envíos a toda Lima y provincias.</li>
+              <li>Opción de envío por inDrive, pagado por el cliente.</li>
+            </ul>
+            <p class="aclaracion">
+              No cobramos un recargo adicional por gestionar el envío.
+              El costo del transporte o servicio de envío lo paga el cliente.
+              Coordinamos punto, horario, costo y disponibilidad por WhatsApp.
+            </p>
+          </article>
+
+          <article class="tarjeta-info">
+            <span class="icono" aria-hidden="true">◷</span>
+            <h3>Tiempo de elaboración</h3>
+            <ul>
+              <li><strong>Menos de 30 unidades:</strong> menos de 3 horas.</li>
+              <li><strong>Más de 30 unidades:</strong> más de 4 horas.</li>
+              <li><strong>Exactamente 30 unidades:</strong> consultar plazo.</li>
+            </ul>
+            <p class="aclaracion">
+              Tiempos orientativos. Confirmamos el plazo según cantidad
+              y diseño, después de aprobar la personalización y recibir
+              el adelanto. El tiempo de envío se coordina aparte.
+            </p>
+          </article>
+
+          <article class="tarjeta-info">
+            <span class="icono" aria-hidden="true">S/</span>
+            <h3>Formas de pago</h3>
+            <div class="medios"><span>Yape</span><span>Efectivo</span></div>
+            <p>
+              Si deseas pagar mediante QR de Yape, solicítalo a la persona
+              que atiende tu pedido por WhatsApp.
+            </p>
+            <p class="aclaracion">
+              Coordina los datos y el monto antes de realizar el pago.
+              El saldo restante se acuerda con la persona que te atiende.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="seccion">
+      <div class="contenedor bloque-blanco">
+        <div class="titulo-seccion">
+          <span class="sobre-titulo">Tus dudas, resueltas</span>
+          <h2>Antes de elegir tu detalle.</h2>
+        </div>
+
+        <div class="preguntas">
+          <details>
+            <summary>¿El precio incluye la personalización?</summary>
+            <p>Sí. Todos los precios del catálogo incluyen la personalización. Envíanos tu idea para coordinar el diseño.</p>
+          </details>
+          <details>
+            <summary>¿Cómo envío mis fotografías o mi diseño?</summary>
+            <p>Envíalos por WhatsApp al contacto que atiende tu pedido. Allí coordinamos las fotos, nombres, frases y diseño.</p>
+          </details>
+          <details>
+            <summary>¿Puedo comprar una sola unidad?</summary>
+            <p>Sí, los productos con precio unitario pueden comprarse individualmente. Los combos y precios por cantidad tienen las condiciones indicadas en cada tarjeta.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto debo adelantar?</summary>
+            <p>Solicitamos el 30 % del total para comenzar la elaboración. El pago del 70 % restante se coordina con la persona que te atiende.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto demora mi pedido?</summary>
+            <p>Para menos de 30 unidades, el tiempo orientativo es menor a 3 horas. Para más de 30 unidades, es superior a 4 horas. Para exactamente 30 unidades, consulta el plazo. Confirmamos el tiempo según cantidad y diseño, después de su aprobación y del adelanto.</p>
+          </details>
+          <details>
+            <summary>¿El envío está incluido?</summary>
+            <p>El envío se paga aparte. No añadimos un recargo por gestionarlo; el cliente cubre el transporte o el servicio elegido. Coordinamos los detalles por WhatsApp.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion">
+      <div class="contenedor contacto">
+        <span class="sobre-titulo">Hagamos tu idea realidad</span>
+        <h2>Tu próximo regalo empieza con un mensaje.</h2>
+        <p>
+          Escríbenos a cualquiera de los dos números.
+          Ambos pueden ayudarte a elegir, personalizar y coordinar tu pedido.
+        </p>
+
+        <div class="contactos">
+          <a
+            class="boton boton-rojo contacto-boton"
+            href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Quiero%20coordinar%20un%20pedido%20personalizado."
+            target="_blank" rel="noopener noreferrer"
+          >
+            <span>WhatsApp 1</span>
+            <strong>+51 941 686 589</strong>
+          </a>
+          <a
+            class="boton boton-rojo contacto-boton"
+            href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Quiero%20coordinar%20un%20pedido%20personalizado."
+            target="_blank" rel="noopener noreferrer"
+          >
+            <span>WhatsApp 2</span>
+            <strong>+51 984 345 276</strong>
+          </a>
+        </div>
+
+        <p class="contacto-nota">
+          Cuéntanos qué producto te gusta, cuántas unidades necesitas
+          y dónde quieres recibirlo.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- REDES SOCIALES -->
+  <footer class="pie">
+    <div class="contenedor pie-interior">
+      <div>
+        <a class="marca" href="#inicio">Ponce <span>Cups</span></a>
+        <p>Detalles personalizados para momentos especiales.</p>
+      </div>
+      <nav class="redes" aria-label="Redes sociales">
+        <a
+          href="https://www.facebook.com/profile.php?id=61595143876063"
+          target="_blank" rel="noopener noreferrer"
+        >Facebook ↗</a>
+        <a
+          href="https://www.tiktok.com/@ponce_cups"
+          target="_blank" rel="noopener noreferrer"
+        >TikTok ↗</a>
+      </nav>
+    </div>
+    <div class="contenedor pie-final">
+      <p>© Ponce Cups · Emprendimiento familiar</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
 </body>
 </html>
