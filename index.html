@@ -4,43 +4,161 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ponce Cups | Regalos personalizados</title>
+  <title>Ponce Cups | Tazas y regalos personalizados</title>
 
   <meta
     name="description"
-    content="Tazas y regalos personalizados en Ponce Cups. Compra por unidad, por cantidad o en combos. Pedidos por WhatsApp y envíos a Lima y provincias."
+    content="Tazas y regalos personalizados. Precios por unidad, al por mayor y combos para parejas. Pedidos por WhatsApp. Envíos a Lima y provincias."
   >
-  <meta name="theme-color" content="#b71935">
 
-  <!-- El navegador utiliza el CSS compilado -->
+  <meta name="theme-color" content="#b60028">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <a class="saltar" href="#contenido">Ir al contenido</a>
 
-  <!-- Control del fondo: funciona sin JavaScript -->
-  <input class="pausa" type="checkbox" id="pausar-fondo">
-  <label class="control-fondo" for="pausar-fondo">
+  <!-- Iconos SVG: no requieren JavaScript ni librerías externas -->
+  <svg
+    class="iconos-definiciones"
+    xmlns="http://www.w3.org/2000/svg"
+    width="0"
+    height="0"
+    aria-hidden="true"
+    focusable="false"
+  >
+    <defs>
+      <symbol id="icono-whatsapp" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M20.52 3.48A11.9 11.9 0 0 0 12.05 0C5.46 0 .1 5.36.1 11.95c0 2.1.55 4.15 1.6 5.96L0 24l6.25-1.64a11.9 11.9 0 0 0 5.8 1.48h.01c6.58 0 11.94-5.36 11.94-11.95 0-3.19-1.24-6.19-3.48-8.41ZM12.06 21.8a9.86 9.86 0 0 1-5.02-1.37l-.36-.21-3.71.97.99-3.62-.24-.37a9.82 9.82 0 0 1-1.51-5.25c0-5.45 4.44-9.89 9.9-9.89a9.82 9.82 0 0 1 7 2.9 9.82 9.82 0 0 1 2.89 7c0 5.45-4.44 9.89-9.94 9.84Z"
+        />
+        <path
+          fill="currentColor"
+          d="M17.46 14.32c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.18-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.08 4.5.71.31 1.27.5 1.7.64.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"
+        />
+      </symbol>
+
+      <symbol id="icono-facebook" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.026 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97H15.83c-1.491 0-1.956.93-1.956 1.885v2.266h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073Z"
+        />
+      </symbol>
+
+      <symbol id="icono-tiktok" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.72-.03-.5-.03-1-.01-1.49.18-1.91 1.12-3.74 2.58-4.98 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.02-.01-8.03.02-12.04Z"
+        />
+      </symbol>
+
+      <symbol id="icono-flecha" viewBox="0 0 24 24">
+        <path
+          d="M5 12h14M13 6l6 6-6 6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- El control se muestra al final mediante CSS -->
+  <input type="checkbox" id="pausar-fondo" class="pausa">
+  <label for="pausar-fondo" class="control-fondo">
     Pausar fondo animado
   </label>
 
   <div class="fondo-animado" aria-hidden="true"></div>
 
-  <div class="barra-superior">
-    Personalización incluida
-    <span aria-hidden="true">✦</span>
-    Envíos a Lima y provincias
-  </div>
+  <!-- PORTADA Y CONTACTOS -->
+  <header id="inicio" class="portada">
+    <div class="contenedor portada-interior">
 
-  <header class="encabezado">
-    <div class="contenedor cabecera">
-      <!-- Puedes sustituir este nombre por tu logo más adelante -->
-      <a class="marca" href="#inicio" aria-label="Ponce Cups, inicio">
-        Ponce <span>Cups</span><i aria-hidden="true">✦</i>
-      </a>
+      <p class="sello">
+        <span aria-hidden="true">✦</span>
+        Regalos personalizados con tu estilo
+        <span aria-hidden="true">✦</span>
+      </p>
 
-      <p class="eslogan">Pequeños detalles. Grandes recuerdos.</p>
+      <h1 class="marca">
+        <span class="marca-ponce">Ponce</span>
+        <span class="marca-cups">Cups</span>
+      </h1>
+
+      <!-- LOS DOS WHATSAPP JUSTO DEBAJO DEL NOMBRE -->
+      <div class="contactos-principales">
+        <a
+          class="whatsapp-principal"
+          href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Quisiera%20hacer%20un%20pedido%20personalizado."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="whatsapp-icono">
+            <svg class="icono" aria-hidden="true">
+              <use href="#icono-whatsapp"></use>
+            </svg>
+          </span>
+          <span>
+            <small>Escríbenos por WhatsApp</small>
+            <strong>941 686 589</strong>
+          </span>
+          <span class="flecha-contacto" aria-hidden="true">↗</span>
+        </a>
+
+        <a
+          class="whatsapp-principal"
+          href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Quisiera%20hacer%20un%20pedido%20personalizado."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="whatsapp-icono">
+            <svg class="icono" aria-hidden="true">
+              <use href="#icono-whatsapp"></use>
+            </svg>
+          </span>
+          <span>
+            <small>También podemos atenderte aquí</small>
+            <strong>984 345 276</strong>
+          </span>
+          <span class="flecha-contacto" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="redes-portada">
+        <a
+          class="enlace-social facebook"
+          href="https://www.facebook.com/profile.php?id=61595143876063"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="icono" aria-hidden="true">
+            <use href="#icono-facebook"></use>
+          </svg>
+          <span>Facebook</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <a
+          class="enlace-social tiktok"
+          href="https://www.tiktok.com/@ponce_cups"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="icono" aria-hidden="true">
+            <use href="#icono-tiktok"></use>
+          </svg>
+          <span>@ponce_cups</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <p class="frase-portada">
+        Detalles que brillan. Recuerdos que se quedan.
+      </p>
 
       <nav class="navegacion" aria-label="Navegación principal">
         <a href="#inicio">Inicio</a>
@@ -49,56 +167,67 @@
         <a href="#entregas">Entregas</a>
         <a href="#contacto">Contacto</a>
       </nav>
+
     </div>
   </header>
 
   <main id="contenido">
-    <!-- PRESENTACIÓN -->
-    <section id="inicio" class="hero seccion">
-      <div class="contenedor hero-panel">
-        <div class="hero-texto">
-          <span class="etiqueta">Hecho con tu toque personal</span>
 
-          <h1>Detalles personalizados para <span>momentos especiales.</span></h1>
+    <!-- PRESENTACIÓN -->
+    <section class="seccion presentacion">
+      <div class="contenedor hero">
+
+        <div class="hero-texto">
+          <span class="etiqueta">Tu idea merece destacar</span>
+
+          <h2>
+            Un regalo especial.
+            <span>Un diseño muy tuyo.</span>
+          </h2>
 
           <p>
-            Tu foto favorita, una frase especial o ese nombre que lo
-            cambia todo. Somos un emprendimiento familiar que convierte
-            tus ideas en tazas y regalos para compartir.
+            Somos un emprendimiento familiar que transforma tus
+            fotografías, nombres y frases en tazas y regalos personalizados.
+            Elige tu favorito y coordinamos contigo cada detalle.
           </p>
 
           <div class="acciones">
-            <a class="boton boton-rojo" href="#productos">
-              Ver productos <span aria-hidden="true">↗</span>
+            <a class="boton boton-dorado" href="#productos">
+              Descubrir productos
+              <svg class="icono" aria-hidden="true">
+                <use href="#icono-flecha"></use>
+              </svg>
             </a>
-            <a class="boton boton-borde" href="#contacto">
-              Consultar por WhatsApp
+            <a class="boton boton-claro" href="#contacto">
+              Quiero personalizar
             </a>
           </div>
 
           <ul class="beneficios">
             <li>Personalización incluida</li>
             <li>Por unidad y al por mayor</li>
-            <li>Para regalar y compartir</li>
+            <li>Envíos a Lima y provincias</li>
           </ul>
         </div>
 
-        <div class="hero-visual">
-          <div class="hero-foto">
+        <figure class="hero-visual">
+          <div class="foto-destacada">
+            <span class="insignia">Dale tu toque ✦</span>
             <img
-              src="imagenes/tazas.jpeg"
-              alt="Tazas personalizadas de Ponce Cups"
+              src="imagenes/tazas3.jpeg"
+              alt="Tazas espejo de Ponce Cups con acabados brillantes"
               fetchpriority="high"
             >
           </div>
-          <div class="nota-visual">
-            <span aria-hidden="true">♡</span>
-            <p>
-              <strong>Un detalle que se vuelve recuerdo</strong>
-              <span>Tu idea, nuestra dedicación.</span>
-            </p>
-          </div>
-        </div>
+          <figcaption>
+            <span aria-hidden="true">✦</span>
+            <div>
+              <strong>Personalizado para ti</strong>
+              <span>Coordinamos tu diseño por WhatsApp.</span>
+            </div>
+          </figcaption>
+        </figure>
+
       </div>
     </section>
 
@@ -106,16 +235,16 @@
     <div class="contenedor">
       <ul class="ventajas">
         <li>
-          <span aria-hidden="true">01</span>
-          <div><strong>Elige tu favorito</strong><p>Opciones para cada ocasión</p></div>
+          <span class="ventaja-numero">01</span>
+          <div><strong>Elige</strong><p>Encuentra tu producto favorito.</p></div>
         </li>
         <li>
-          <span aria-hidden="true">02</span>
-          <div><strong>Personalízalo</strong><p>Fotos, nombres y frases</p></div>
+          <span class="ventaja-numero">02</span>
+          <div><strong>Personaliza</strong><p>Hazlo único con tu idea.</p></div>
         </li>
         <li>
-          <span aria-hidden="true">03</span>
-          <div><strong>Coordina por WhatsApp</strong><p>Dos contactos para atenderte</p></div>
+          <span class="ventaja-numero">03</span>
+          <div><strong>Regala</strong><p>Comparte un recuerdo especial.</p></div>
         </li>
       </ul>
     </div>
@@ -123,12 +252,13 @@
     <!-- CATÁLOGO -->
     <section id="productos" class="seccion">
       <div class="contenedor">
+
         <div class="titulo-seccion">
-          <span class="sobre-titulo">Nuestro catálogo</span>
-          <h2>Un regalo con mucho de ti.</h2>
+          <span class="sobre-titulo">Elige tu próximo detalle</span>
+          <h2>Nuestros productos <span>brillan contigo.</span></h2>
           <p>
             Todos los precios incluyen la personalización.
-            Elige por unidad, por cantidad o en combo.
+            Encuentra opciones por unidad, por cantidad y en combo.
           </p>
         </div>
 
@@ -148,26 +278,35 @@
               <span class="categoria">Para cada ocasión</span>
               <h3>Taza de 11 oz AAA+</h3>
               <p class="descripcion">
-                Dale un significado especial con una fotografía,
-                un nombre o una frase.
+                Tu fotografía, nombre o frase en un detalle
+                para regalar o disfrutar.
               </p>
+
               <p class="precio">S/ 10.00 <span>por unidad</span></p>
-              <div class="precio-especial">
+
+              <div class="precio-cantidad">
                 <strong>S/ 7.50 cada una</strong>
                 <span>En pedidos de 17 unidades</span>
               </div>
+
               <details class="pedido">
-                <summary>Pedir por WhatsApp <span aria-hidden="true">↗</span></summary>
-                <div class="opciones">
-                  <p>Ambos contactos pueden atenderte:</p>
+                <summary>
+                  <svg class="icono" aria-hidden="true">
+                    <use href="#icono-whatsapp"></use>
+                  </svg>
+                  Pedir por WhatsApp
+                  <span aria-hidden="true">＋</span>
+                </summary>
+                <div class="opciones-pedido">
+                  <p>Elige cualquiera de los dos contactos:</p>
                   <a
                     href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20de%2011%20oz%20AAA%2B.%20Quiero%20consultar%20cantidad%2C%20personalizacion%20y%20entrega."
                     target="_blank" rel="noopener noreferrer"
-                  >WhatsApp 1 · 941 686 589</a>
+                  >941 686 589 ↗</a>
                   <a
                     href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20de%2011%20oz%20AAA%2B.%20Quiero%20consultar%20cantidad%2C%20personalizacion%20y%20entrega."
                     target="_blank" rel="noopener noreferrer"
-                  >WhatsApp 2 · 984 345 276</a>
+                  >984 345 276 ↗</a>
                 </div>
               </details>
             </div>
@@ -176,7 +315,7 @@
           <!-- PRODUCTO 2 -->
           <article class="producto">
             <div class="producto-foto">
-              <span class="distintivo distintivo-dorado">Un detalle diferente</span>
+              <span class="distintivo">Un detalle diferente</span>
               <img
                 src="imagenes/tazas1.jpeg"
                 alt="Taza mágica negra de 11 onzas"
@@ -187,26 +326,35 @@
               <span class="categoria">Para sorprender</span>
               <h3>Taza mágica de 11 oz</h3>
               <p class="descripcion">
-                Convierte tu idea en una taza personalizada
-                para esa persona especial.
+                Una opción especial para convertir tu idea
+                en un regalo personalizado.
               </p>
+
               <p class="precio">S/ 15.00 <span>por unidad</span></p>
-              <div class="precio-especial">
+
+              <div class="precio-cantidad">
                 <strong>S/ 9.90 cada una</strong>
                 <span>En pedidos de 10 unidades</span>
               </div>
+
               <details class="pedido">
-                <summary>Pedir por WhatsApp <span aria-hidden="true">↗</span></summary>
-                <div class="opciones">
-                  <p>Ambos contactos pueden atenderte:</p>
+                <summary>
+                  <svg class="icono" aria-hidden="true">
+                    <use href="#icono-whatsapp"></use>
+                  </svg>
+                  Pedir por WhatsApp
+                  <span aria-hidden="true">＋</span>
+                </summary>
+                <div class="opciones-pedido">
+                  <p>Elige cualquiera de los dos contactos:</p>
                   <a
                     href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20magica%20de%2011%20oz.%20Quiero%20consultar%20cantidad%2C%20personalizacion%20y%20entrega."
                     target="_blank" rel="noopener noreferrer"
-                  >WhatsApp 1 · 941 686 589</a>
+                  >941 686 589 ↗</a>
                   <a
                     href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20magica%20de%2011%20oz.%20Quiero%20consultar%20cantidad%2C%20personalizacion%20y%20entrega."
                     target="_blank" rel="noopener noreferrer"
-                  >WhatsApp 2 · 984 345 276</a>
+                  >984 345 276 ↗</a>
                 </div>
               </details>
             </div>
@@ -229,23 +377,32 @@
                 Combina tu diseño con un toque de color.
                 Consulta las opciones disponibles.
               </p>
+
               <p class="precio">S/ 13.00 <span>por unidad</span></p>
-              <div class="precio-especial">
+
+              <div class="precio-cantidad">
                 <strong>S/ 8.90 cada una</strong>
                 <span>En pedidos de 10 unidades</span>
               </div>
+
               <details class="pedido">
-                <summary>Pedir por WhatsApp <span aria-hidden="true">↗</span></summary>
-                <div class="opciones">
-                  <p>Ambos contactos pueden atenderte:</p>
+                <summary>
+                  <svg class="icono" aria-hidden="true">
+                    <use href="#icono-whatsapp"></use>
+                  </svg>
+                  Pedir por WhatsApp
+                  <span aria-hidden="true">＋</span>
+                </summary>
+                <div class="opciones-pedido">
+                  <p>Elige cualquiera de los dos contactos:</p>
                   <a
                     href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20con%20interior%20y%20asa%20de%20color.%20Quiero%20consultar%20colores%2C%20cantidad%2C%20personalizacion%20y%20entrega."
                     target="_blank" rel="noopener noreferrer"
-                  >WhatsApp 1 · 941 686 589</a>
+                  >941 686 589 ↗</a>
                   <a
                     href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20con%20interior%20y%20asa%20de%20color.%20Quiero%20consultar%20colores%2C%20cantidad%2C%20personalizacion%20y%20entrega."
                     target="_blank" rel="noopener noreferrer"
-                  >WhatsApp 2 · 984 345 276</a>
+                  >984 345 276 ↗</a>
                 </div>
               </details>
             </div>
@@ -254,10 +411,10 @@
           <!-- PRODUCTO 4 -->
           <article class="producto">
             <div class="producto-foto">
-              <span class="distintivo distintivo-dorado">Un acabado especial</span>
+              <span class="distintivo">Un acabado que destaca</span>
               <img
                 src="imagenes/tazas3.jpeg"
-                alt="Tazas espejo con diferentes acabados"
+                alt="Tazas espejo con acabados brillantes"
                 loading="lazy"
               >
             </div>
@@ -265,26 +422,35 @@
               <span class="categoria">Para regalar con estilo</span>
               <h3>Taza espejo</h3>
               <p class="descripcion">
-                Un acabado que destaca y una personalización
-                que hace el detalle tuyo.
+                Un acabado llamativo para acompañar tu
+                personalización. Consulta los colores disponibles.
               </p>
+
               <p class="precio">S/ 15.00 <span>por unidad</span></p>
-              <div class="precio-especial">
+
+              <div class="precio-cantidad">
                 <strong>S/ 10.90 cada una</strong>
                 <span>En pedidos de 10 unidades</span>
               </div>
+
               <details class="pedido">
-                <summary>Pedir por WhatsApp <span aria-hidden="true">↗</span></summary>
-                <div class="opciones">
-                  <p>Ambos contactos pueden atenderte:</p>
+                <summary>
+                  <svg class="icono" aria-hidden="true">
+                    <use href="#icono-whatsapp"></use>
+                  </svg>
+                  Pedir por WhatsApp
+                  <span aria-hidden="true">＋</span>
+                </summary>
+                <div class="opciones-pedido">
+                  <p>Elige cualquiera de los dos contactos:</p>
                   <a
                     href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20espejo.%20Quiero%20consultar%20colores%2C%20cantidad%2C%20personalizacion%20y%20entrega."
                     target="_blank" rel="noopener noreferrer"
-                  >WhatsApp 1 · 941 686 589</a>
+                  >941 686 589 ↗</a>
                   <a
                     href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Me%20interesa%20la%20taza%20espejo.%20Quiero%20consultar%20colores%2C%20cantidad%2C%20personalizacion%20y%20entrega."
                     target="_blank" rel="noopener noreferrer"
-                  >WhatsApp 2 · 984 345 276</a>
+                  >984 345 276 ↗</a>
                 </div>
               </details>
             </div>
@@ -296,7 +462,7 @@
               <span class="distintivo">Para compartir ♡</span>
               <img
                 src="imagenes/tazas4.jpeg"
-                alt="Combo de dos tazas para pareja"
+                alt="Dos tazas del combo pareja"
                 loading="lazy"
               >
             </div>
@@ -304,26 +470,35 @@
               <span class="categoria">Un recuerdo para dos</span>
               <h3>Combo pareja personalizado</h3>
               <p class="descripcion">
-                Dos tazas personalizadas con la foto de la pareja,
+                Dos tazas personalizadas con la foto de la pareja
                 para compartir un recuerdo juntos.
               </p>
+
               <p class="precio">S/ 23.60 <span>por el combo completo</span></p>
-              <div class="precio-especial">
+
+              <div class="precio-cantidad">
                 <strong>Incluye dos tazas</strong>
                 <span>Personalizadas con foto de la pareja</span>
               </div>
+
               <details class="pedido">
-                <summary>Pedir por WhatsApp <span aria-hidden="true">↗</span></summary>
-                <div class="opciones">
-                  <p>Ambos contactos pueden atenderte:</p>
+                <summary>
+                  <svg class="icono" aria-hidden="true">
+                    <use href="#icono-whatsapp"></use>
+                  </svg>
+                  Pedir por WhatsApp
+                  <span aria-hidden="true">＋</span>
+                </summary>
+                <div class="opciones-pedido">
+                  <p>Elige cualquiera de los dos contactos:</p>
                   <a
                     href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Me%20interesa%20el%20combo%20pareja%20de%20dos%20tazas%20por%20S%2F%2023.60.%20Quiero%20coordinar%20la%20personalizacion%20y%20entrega."
                     target="_blank" rel="noopener noreferrer"
-                  >WhatsApp 1 · 941 686 589</a>
+                  >941 686 589 ↗</a>
                   <a
                     href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Me%20interesa%20el%20combo%20pareja%20de%20dos%20tazas%20por%20S%2F%2023.60.%20Quiero%20coordinar%20la%20personalizacion%20y%20entrega."
                     target="_blank" rel="noopener noreferrer"
-                  >WhatsApp 2 · 984 345 276</a>
+                  >984 345 276 ↗</a>
                 </div>
               </details>
             </div>
@@ -332,7 +507,7 @@
           <!-- PRODUCTO 6 -->
           <article class="producto">
             <div class="producto-foto">
-              <span class="distintivo distintivo-dorado">También en combo</span>
+              <span class="distintivo">También en combo</span>
               <img
                 src="imagenes/tazas5.jpeg"
                 alt="Choperos transparentes de 16 onzas"
@@ -346,27 +521,37 @@
                 Personalízalo a tu gusto. Disponible por unidad,
                 por cantidad o en combo para dos.
               </p>
+
               <p class="precio">S/ 15.90 <span>por unidad</span></p>
-              <div class="precio-especial">
+
+              <div class="precio-cantidad">
                 <strong>S/ 12.00 cada uno</strong>
                 <span>Desde 10 unidades</span>
               </div>
-              <p class="combo">
+
+              <p class="combo-extra">
                 <strong>Combo pareja: S/ 29.00</strong>
                 <span>Incluye dos choperos</span>
               </p>
+
               <details class="pedido">
-                <summary>Pedir por WhatsApp <span aria-hidden="true">↗</span></summary>
-                <div class="opciones">
-                  <p>Ambos contactos pueden atenderte:</p>
+                <summary>
+                  <svg class="icono" aria-hidden="true">
+                    <use href="#icono-whatsapp"></use>
+                  </svg>
+                  Pedir por WhatsApp
+                  <span aria-hidden="true">＋</span>
+                </summary>
+                <div class="opciones-pedido">
+                  <p>Elige cualquiera de los dos contactos:</p>
                   <a
                     href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Me%20interesa%20el%20chopero%20de%2016%20oz.%20Quiero%20consultar%20cantidad%2C%20combo%20pareja%2C%20personalizacion%20y%20entrega."
                     target="_blank" rel="noopener noreferrer"
-                  >WhatsApp 1 · 941 686 589</a>
+                  >941 686 589 ↗</a>
                   <a
                     href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Me%20interesa%20el%20chopero%20de%2016%20oz.%20Quiero%20consultar%20cantidad%2C%20combo%20pareja%2C%20personalizacion%20y%20entrega."
                     target="_blank" rel="noopener noreferrer"
-                  >WhatsApp 2 · 984 345 276</a>
+                  >984 345 276 ↗</a>
                 </div>
               </details>
             </div>
@@ -375,39 +560,41 @@
         </div>
 
         <p class="nota-catalogo">
-          ¿Tienes otra idea o necesitas otra cantidad?
-          <a href="#contacto">Cuéntanos por WhatsApp.</a>
+          ¿Tienes una idea diferente o necesitas otra cantidad?
+          <a href="#contacto">Escríbenos y la coordinamos.</a>
         </p>
+
       </div>
     </section>
 
     <!-- CÓMO COMPRAR -->
     <section id="como-comprar" class="seccion">
-      <div class="contenedor bloque-blanco">
-        <div class="titulo-seccion">
+      <div class="contenedor panel-blanco">
+
+        <div class="titulo-seccion titulo-interior">
           <span class="sobre-titulo">Así de sencillo</span>
-          <h2>Tu idea se convierte en regalo.</h2>
-          <p>Coordinamos contigo cada detalle por WhatsApp.</p>
+          <h2>Tu idea, <span>hecha regalo.</span></h2>
+          <p>Te acompañamos por WhatsApp en cada paso.</p>
         </div>
 
         <ol class="pasos">
           <li>
-            <span class="numero" aria-hidden="true">1</span>
+            <span class="numero-paso">01</span>
             <h3>Elige</h3>
             <p>Selecciona tu producto y la cantidad que necesitas.</p>
           </li>
           <li>
-            <span class="numero" aria-hidden="true">2</span>
+            <span class="numero-paso">02</span>
             <h3>Escríbenos</h3>
             <p>Cualquiera de nuestros dos contactos puede atenderte.</p>
           </li>
           <li>
-            <span class="numero" aria-hidden="true">3</span>
+            <span class="numero-paso">03</span>
             <h3>Personaliza</h3>
             <p>Envía tus fotos, nombres o frases y coordinamos el diseño.</p>
           </li>
           <li>
-            <span class="numero" aria-hidden="true">4</span>
+            <span class="numero-paso">04</span>
             <h3>Confirma</h3>
             <p>Aprueba el diseño y realiza el adelanto para comenzar.</p>
           </li>
@@ -416,7 +603,7 @@
         <div class="adelanto">
           <strong class="porcentaje">30<span>%</span></strong>
           <div>
-            <h3>El primer paso para hacerlo realidad</h3>
+            <h3>Empezamos a crear tu pedido</h3>
             <p>
               Para comenzar la elaboración de tu pedido personalizado,
               solicitamos un <strong>adelanto del 30 % del total</strong>.
@@ -424,35 +611,37 @@
             </p>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- ENTREGAS Y CONDICIONES -->
+    <!-- INFORMACIÓN -->
     <section id="entregas" class="seccion">
       <div class="contenedor">
+
         <div class="titulo-seccion">
-          <span class="sobre-titulo">Antes de pedir</span>
-          <h2>Todo claro, de principio a fin.</h2>
+          <span class="sobre-titulo">Antes de hacer tu pedido</span>
+          <h2>Todo claro, <span>desde el principio.</span></h2>
         </div>
 
         <div class="informacion">
           <article class="tarjeta-info">
-            <span class="icono" aria-hidden="true">↗</span>
+            <span class="icono-info" aria-hidden="true">↗</span>
             <h3>Entregas y envíos</h3>
             <ul>
               <li>Entregas coordinadas en cualquier estación del tren.</li>
               <li>Envíos a toda Lima y provincias.</li>
-              <li>Opción de envío por inDrive, pagado por el cliente.</li>
+              <li>Envío por inDrive, pagado por el cliente.</li>
             </ul>
             <p class="aclaracion">
               No cobramos un recargo adicional por gestionar el envío.
-              El costo del transporte o servicio de envío lo paga el cliente.
+              El transporte o servicio de envío lo paga el cliente.
               Coordinamos punto, horario, costo y disponibilidad por WhatsApp.
             </p>
           </article>
 
           <article class="tarjeta-info">
-            <span class="icono" aria-hidden="true">◷</span>
+            <span class="icono-info" aria-hidden="true">◷</span>
             <h3>Tiempo de elaboración</h3>
             <ul>
               <li><strong>Menos de 30 unidades:</strong> menos de 3 horas.</li>
@@ -467,28 +656,33 @@
           </article>
 
           <article class="tarjeta-info">
-            <span class="icono" aria-hidden="true">S/</span>
+            <span class="icono-info" aria-hidden="true">S/</span>
             <h3>Formas de pago</h3>
-            <div class="medios"><span>Yape</span><span>Efectivo</span></div>
+            <div class="medios-pago">
+              <span>Yape</span>
+              <span>Efectivo</span>
+            </div>
             <p>
-              Si deseas pagar mediante QR de Yape, solicítalo a la persona
-              que atiende tu pedido por WhatsApp.
+              Si deseas pagar mediante QR de Yape, solicítalo
+              a la persona que atiende tu pedido por WhatsApp.
             </p>
             <p class="aclaracion">
-              Coordina los datos y el monto antes de realizar el pago.
-              El saldo restante se acuerda con la persona que te atiende.
+              Coordina los datos y el monto antes de pagar.
+              El pago del saldo restante se acuerda con la persona que te atiende.
             </p>
           </article>
         </div>
+
       </div>
     </section>
 
-    <!-- PREGUNTAS FRECUENTES -->
+    <!-- PREGUNTAS -->
     <section class="seccion">
-      <div class="contenedor bloque-blanco">
-        <div class="titulo-seccion">
-          <span class="sobre-titulo">Tus dudas, resueltas</span>
-          <h2>Antes de elegir tu detalle.</h2>
+      <div class="contenedor panel-blanco">
+
+        <div class="titulo-seccion titulo-interior">
+          <span class="sobre-titulo">Resolvemos tus dudas</span>
+          <h2>Antes de elegir <span>tu detalle.</span></h2>
         </div>
 
         <div class="preguntas">
@@ -498,83 +692,96 @@
           </details>
           <details>
             <summary>¿Cómo envío mis fotografías o mi diseño?</summary>
-            <p>Envíalos por WhatsApp al contacto que atiende tu pedido. Allí coordinamos las fotos, nombres, frases y diseño.</p>
+            <p>Envíalos por WhatsApp al contacto que atiende tu pedido. Allí coordinamos fotografías, nombres, frases y diseño.</p>
           </details>
           <details>
             <summary>¿Puedo comprar una sola unidad?</summary>
-            <p>Sí, los productos con precio unitario pueden comprarse individualmente. Los combos y precios por cantidad tienen las condiciones indicadas en cada tarjeta.</p>
+            <p>Sí, los productos con precio unitario pueden comprarse individualmente. Los precios por cantidad y combos tienen las condiciones indicadas en cada tarjeta.</p>
           </details>
           <details>
             <summary>¿Cuánto debo adelantar?</summary>
             <p>Solicitamos el 30 % del total para comenzar la elaboración. El pago del 70 % restante se coordina con la persona que te atiende.</p>
           </details>
           <details>
-            <summary>¿Cuánto demora mi pedido?</summary>
+            <summary>¿Cuánto demora la elaboración?</summary>
             <p>Para menos de 30 unidades, el tiempo orientativo es menor a 3 horas. Para más de 30 unidades, es superior a 4 horas. Para exactamente 30 unidades, consulta el plazo. Confirmamos el tiempo según cantidad y diseño, después de su aprobación y del adelanto.</p>
           </details>
           <details>
-            <summary>¿El envío está incluido?</summary>
-            <p>El envío se paga aparte. No añadimos un recargo por gestionarlo; el cliente cubre el transporte o el servicio elegido. Coordinamos los detalles por WhatsApp.</p>
+            <summary>¿El envío está incluido en el precio?</summary>
+            <p>El envío se paga aparte. No añadimos un recargo por gestionarlo: el cliente cubre el transporte o el servicio elegido. Los detalles se coordinan por WhatsApp.</p>
           </details>
         </div>
+
       </div>
     </section>
 
-    <!-- CONTACTO -->
+    <!-- CONTACTO FINAL -->
     <section id="contacto" class="seccion">
-      <div class="contenedor contacto">
+      <div class="contenedor contacto-panel">
         <span class="sobre-titulo">Hagamos tu idea realidad</span>
-        <h2>Tu próximo regalo empieza con un mensaje.</h2>
+        <h2>Tu próximo regalo <span>empieza aquí.</span></h2>
         <p>
-          Escríbenos a cualquiera de los dos números.
-          Ambos pueden ayudarte a elegir, personalizar y coordinar tu pedido.
+          Cuéntanos qué producto te gusta, cuántas unidades necesitas
+          y dónde quieres recibirlo. Ambos contactos pueden atenderte.
         </p>
 
-        <div class="contactos">
+        <div class="contactos-finales">
           <a
-            class="boton boton-rojo contacto-boton"
+            class="boton boton-dorado"
             href="https://wa.me/51941686589?text=Hola%20Ponce%20Cups.%20Quiero%20coordinar%20un%20pedido%20personalizado."
             target="_blank" rel="noopener noreferrer"
           >
-            <span>WhatsApp 1</span>
-            <strong>+51 941 686 589</strong>
+            <svg class="icono" aria-hidden="true">
+              <use href="#icono-whatsapp"></use>
+            </svg>
+            941 686 589
           </a>
+
           <a
-            class="boton boton-rojo contacto-boton"
+            class="boton boton-dorado"
             href="https://wa.me/51984345276?text=Hola%20Ponce%20Cups.%20Quiero%20coordinar%20un%20pedido%20personalizado."
             target="_blank" rel="noopener noreferrer"
           >
-            <span>WhatsApp 2</span>
-            <strong>+51 984 345 276</strong>
+            <svg class="icono" aria-hidden="true">
+              <use href="#icono-whatsapp"></use>
+            </svg>
+            984 345 276
           </a>
         </div>
-
-        <p class="contacto-nota">
-          Cuéntanos qué producto te gusta, cuántas unidades necesitas
-          y dónde quieres recibirlo.
-        </p>
       </div>
     </section>
+
   </main>
 
-  <!-- REDES SOCIALES -->
   <footer class="pie">
     <div class="contenedor pie-interior">
       <div>
-        <a class="marca" href="#inicio">Ponce <span>Cups</span></a>
+        <a class="marca-pie" href="#inicio">Ponce <span>Cups</span></a>
         <p>Detalles personalizados para momentos especiales.</p>
       </div>
-      <nav class="redes" aria-label="Redes sociales">
+
+      <nav class="redes-pie" aria-label="Redes sociales">
         <a
           href="https://www.facebook.com/profile.php?id=61595143876063"
           target="_blank" rel="noopener noreferrer"
-        >Facebook ↗</a>
+        >
+          <svg class="icono" aria-hidden="true">
+            <use href="#icono-facebook"></use>
+          </svg>
+          Facebook
+        </a>
         <a
           href="https://www.tiktok.com/@ponce_cups"
           target="_blank" rel="noopener noreferrer"
-        >TikTok ↗</a>
+        >
+          <svg class="icono" aria-hidden="true">
+            <use href="#icono-tiktok"></use>
+          </svg>
+          TikTok
+        </a>
       </nav>
     </div>
+
     <div class="contenedor pie-final">
       <p>© Ponce Cups · Emprendimiento familiar</p>
       <a href="#inicio">Volver arriba ↑</a>
